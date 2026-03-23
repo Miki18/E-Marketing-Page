@@ -1,0 +1,33 @@
+:root{
+  --accent:#0066cc;
+  --muted:#666;
+  --bg:#f9f9fb;
+  --container-width:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;color:#222;background:var(--bg)}
+.container{max-width:var(--container-width);margin:0 auto;padding:20px}
+.site-header{background:#fff;border-bottom:1px solid #eee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.site-header nav a{margin-left:16px;color:var(--muted);text-decoration:none}
+.logo{margin:0;padding:14px 0}
+.hero{background:linear-gradient(90deg, #fff, #f3f8ff);padding:48px 0}
+.hero h2{margin:0 0 8px}
+.btn{display:inline-block;padding:10px 16px;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.problems ul{padding-left:18px}
+.features .feature-list{display:flex;gap:16px;flex-wrap:wrap}
+.feature{background:#fff;padding:14px;border-radius:8px;flex:1;min-width:200px}
+.cta{background:#fff;margin-top:24px;padding:18px;border-radius:8px}
+.signup form{display:flex;flex-direction:column;gap:8px;max-width:420px}
+.signup input{padding:8px;border:1px solid #ddd;border-radius:4px}
+.faq details{background:#fff;padding:10px;margin-bottom:8px;border-radius:6px}
+.site-footer{padding:16px;text-align:center;color:var(--muted)}
+.pricing .plans{display:flex;gap:16px;flex-wrap:wrap}
+.plan{background:#fff;padding:18px;border-radius:8px;flex:1;min-width:220px;text-align:center}
+.plan.popular{box-shadow:0 4px 14px rgba(0,0,0,0.06);border:2px solid var(--accent)}
+.price{font-size:1.5rem;margin:8px 0}
+
+@media (max-width:720px){
+  .features .feature-list, .pricing .plans{flex-direction:column}
+  .site-header .container{flex-direction:column;align-items:flex-start}
+}

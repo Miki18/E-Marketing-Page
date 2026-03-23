@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prosty serwis marketingowy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">CodeSmart</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a id="nav-pricing" href="pricing.html">Cennik</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h2>CodeSmart — platforma edukacyjna dla branży IT</h2>
+        <p>Nauka, szkolenia i współpraca z ekspertami — wszystko w jednym miejscu dla uczniów, pracowników i firm.</p>
+        <p><a id="cta-main" class="btn" href="#signup">Załóż konto / Zgłoś współpracę</a></p>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="problems container">
+      <h3>Problemy użytkowników</h3>
+      <ul>
+        <li>Uczniowie / studenci mają trudności ze zrozumieniem zagadnień informatycznych, co skutkuje niskimi ocenami.</li>
+        <li>Pracownicy IT nie nadążają za nowymi narzędziami, przez co są mniej konkurencyjni na rynku pracy.</li>
+        <li>Kierownicy zespołów mają problem z wdrażaniem nowych technologii i wysokimi kosztami szkoleń.</li>
+        <li>Korepetytorzy mają trudności z dotarciem do szerokiej grupy klientów, co wpływa na niestabilność dochodów.</li>
+      </ul>
+    </section>
+
+    <!-- Features -->
+    <section class="features container">
+      <h3>Co oferuje CodeSmart</h3>
+      <div class="feature-list">
+        <div class="feature">
+          <h4>Baza kursów i ścieżek</h4>
+          <p>Działy tematyczne i ścieżki edukacyjne dopasowane do poziomu ucznia i potrzeb firmy.</p>
+        </div>
+        <div class="feature">
+          <h4>Sesje na żywo z korepetytorami</h4>
+          <p>Łatwe rezerwacje i możliwość prowadzenia zajęć grupowych lub indywidualnych.</p>
+        </div>
+        <div class="feature">
+          <h4>Szkolenia dla firm</h4>
+          <p>Pakiety dla zespołów, raporty postępów i wsparcie przy wdrażaniu nowych technologii.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA section -->
+    <section class="cta container">
+      <h3>Chcesz spróbować?</h3>
+      <p><a class="btn" href="#signup">Zarejestruj się teraz</a></p>
+    </section>
+
+    <!-- Signup -->
+    <section id="signup" class="signup container">
+      <h3>Konwersje / Zgłoszenia</h3>
+      <p>Wybierz swoją rolę i uzupełnij dane — dla uczniów/pracowników zakładamy konto, dla korepetytorów i kierowników to formularz współpracy.</p>
+      <form id="signup-form">
+        <label>
+          Imię
+          <input name="name" type="text" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required />
+        </label>
+        <label>
+          Twoja rola
+          <select name="role" id="role-select">
+            <option value="student">Uczeń / Student</option>
+            <option value="parent">Rodzic</option>
+            <option value="employee">Pracownik sektora IT</option>
+            <option value="manager">Kierownik zespołu IT</option>
+            <option value="tutor">Korepetytor</option>
+          </select>
+        </label>
+        <label id="message-label" style="display:none">
+          Opis współpracy / dodatkowe informacje
+          <textarea name="message" rows="4"></textarea>
+        </label>
+        <button type="submit" class="btn">Wyślij</button>
+      </form>
+      <div id="signup-message" aria-live="polite"></div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq container">
+      <h3>FAQ</h3>
+      <details>
+        <summary>Jak działa darmowy plan?</summary>
+        <p>Darmowy plan pozwala przetestować podstawowe funkcje przez nieograniczony czas.</p>
+      </details>
+      <details>
+        <summary>Czy mogę zmienić plan później?</summary>
+        <p>Tak — możesz przejść na plan Pro lub Business w każdej chwili.</p>
+      </details>
+    </section>
+
+    <footer class="site-footer container">
+      <p>&copy; 2026 E-Marketing</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
