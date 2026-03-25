@@ -113,7 +113,9 @@
           Opis współpracy / dodatkowe informacje
           <textarea name="message" rows="4"></textarea>
         </label>
-        <button type="submit" class="btn">Wyślij</button>
+        <button type="submit" class="btn" onclick="dataLayer.push({ event: 'form_submit' });">
+        Wyślij
+        </button>
       </form>
       <div id="signup-message" aria-live="polite"></div>
     </section>
