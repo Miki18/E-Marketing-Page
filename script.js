@@ -5,7 +5,7 @@
   if(cta){
     cta.addEventListener('click', function(e){
       console.log('[track] cta-main clicked');
-      // Could fire analytics event here
+      dataLayer.push({ event: 'cta_click' });
     });
   }
 
